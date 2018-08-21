@@ -2,7 +2,12 @@
     "elements": {
         "div": {},
         "center": {},
-        "style": {},
+        "style": {
+            "attributes": {
+                "type": {}
+            }
+        },
+        "h2": {},
         "img{width:": {}
     },
     "attributes": {}
