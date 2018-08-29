@@ -2,11 +2,23 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Cadastro</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        
+    <bgcolor>
+        <style>
+body {
+    /*background-color: #c9d2ff; se for apenas cor*/
+    background-image: url("fundo.jpg"); /* Desde que a imagem esteja na mesma pasta que a página, você só terá de digitar o nome e a extensão do arquivo */
+    background-color: #93B874; /* É bom escolher uma cor de fundo para o caso de a imagem não carregar */
+}
+    
+</style>
+    </bgcolor>
+        
         <form action="CadastroSecesso.html" method="post">
            <!--FIELDSET servi para adicionar moldura e LEGEND para adicionar nome-->
            <fieldset>
@@ -20,16 +32,59 @@
             
             <p><input size="45" type="email" name="Insira o email" placeholder="E-mail ou número doo celular" required></p>
             <p><input size="45" type="email" name="Insira o email" placeholder="Insira novamente o e-mail ou número doo celular" required></p>
-                    
+            <p><input size="45" type="password" name="Nova senha" placeholder="Nova senha"></p>        
              <p>Aniversário</p>
-            <input type="date" <h4> Por que preciso informar minha data de nascimento?</h4>
+             <input type="date" <h4> Por que preciso informar minha data de nascimento?</h4>
             
             <br><br>
             <input type="radio" name="sexo" value="m" required> Masculino
             <input type="radio" name="sexo" value="f" required> Feminino
             <br><br>
-                        
+            
+<!--     botão sem css            
             <input type="submit" value="Abrir uma conta">
+            <button type="button" name="" value="" class="css3button">Abrir uma conta</button> 
+-->
+   
+
+<!-- css para bottão -->
+
+<style type="text/css">
+
+.botao  {
+position:absolute;
+top:390px;
+left:20px;
+margin:0px;
+padding:0px;
+        }
+
+.botao a, .botao a:visited {  
+font: bold 12px/24px arial, helvetica, sans-aerif;	
+padding:0px;
+text-decoration: none;
+text-align:center;	
+color:#fff;
+background: #238E23 url('botao_link.gif') no-repeat 
+center center;	
+width:120px;  
+height:24px;	
+display:block;	
+	}
+
+.botao a:hover { 
+background: #666 url('botao_hover.gif') no-repeat 
+center center;
+color:#999;
+               }
+</style>
+</head>
+<body>
+<p class="botao">
+<a href="#" title="Meu Link">Abrir uma conta</a>
+</p>
+<br>
+
            </fieldset>
     </body>
 </html>
