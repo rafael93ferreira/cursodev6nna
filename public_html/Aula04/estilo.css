@@ -8,12 +8,29 @@ and open the template in the editor.
     Author     : Rafael
 */
 
-body {
+/*body {
     background-color: gray;
 }
+*/
 
-P{
+div{
     font-size: 30px;
     font-family: helvetica;
     color: blue;
+}
+
+p{
+    font-size: 40px;
+    font-family: arial;
+    color: pink;
+}
+
+#postagens{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: green;
+}
+
+.conteudos, .perfil{
+    color: gray;
 }
