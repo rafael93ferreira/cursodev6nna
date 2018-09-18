@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="estilo.css" rel=stylesheet>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <h1>  <center>Formulario de cadastro.</center></h1>
+        <fieldset>
+        <table>
+         
+            <legend>Dados Pessoais</legend>
+             Nome: <input type="text" name="Nome Completo" placeholder="Insira o Nome" required>
+             <br><br>
+            email: <input type="email"  placeholder="Insira o email" required>                                                                                                                                                                                                          
+            <br><br>
+            cidade: <input type="text"  placeholder="Insira sua cidade" required>
+            <br><br>
+            estado: <select name="estado">
+                <option>PARÁ</option>    
+                
+            </select>
+            
+        </table>
+        </fieldset>
+        
+        <fieldset>
+        
+            <legend>Dados Profissionais</legend>
+            <p><b>Cargo pretendido</b></p>
+            <input type="radio" required="">Analista de sistema
+            <input type="radio" required="">Analista de banco de dados
+            <input type="radio" required="">Analista de suporte
+            <br><br>
+            <p><b>Tecnologias de interesse</b></p>
+            <input type="checkbox" required="">Java
+            <input type="checkbox" required="">HTML,CSS
+            <input type="checkbox" required="">Javascript
+            <input type="checkbox" required="">SQL
+            <br><br>
+            <p><b>Mini curriculo</b></p>
+            <textarea cols="50" rows="5"></textarea>
+            
+           </fieldset>
+        
+        <fieldset>
+            <legend><b>Açoes</b></legend>
+            <input type="submit" required="">
+            <input type="submit" value="Limpar" required="">
+            
+            
+            
+            
+        </fieldset>
+        
+    </body>
+</html>
