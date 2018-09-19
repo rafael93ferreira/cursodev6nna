@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>    
+    <head>    
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">    
+        <title>Calculadora</title>    
+    
+        <script type="text/javascript">    
+            function calculadora() {    
+               var n1 = parseFloat(document.getElementById('n1').value);    
+               var n2 = parseFloat(document.getElementById('n2').value);    
+               var resultado = 0;  
+               if (document.getElementsByName('operacao')[0].checked) {    
+                   resultado = n1 + n2;  
+               }    
+               if (document.getElementsByName('operacao')[1].checked) {    
+                   resultado = n1 - n2;    
+               }    
+               if (document.getElementsByName('operacao')[2].checked) {    
+                   resultado = n1 * n2;    
+               }    
+               if (document.getElementsByName('operacao')[3].checked) {    
+                   resultado = n1 / n2;    
+               }    
+               document.getElementById('resultado').value = resultado;    
+            }    
+        </script>    
+    
+    </head>    
+    <body>  
+        <form action="#">  
+        <p>  
+            #1: <input id="n1" type="text">
+            <br><br>    
+            #2: <input id="n2" type="text">  
+        </p>  
+        <p>  
+            <input type="radio" name="operacao" id="adicao" value="+" checked><button for="adicao">+</button>
+             
+            <input type="radio" name="operacao" id="subtracao" value="-"> <button for="subtracao">_</button>
+            
+            <input type="radio" name="operacao" id="multiplicacao" value="*"> <button or="multiplicacao">*</button>
+               
+            <input type="radio" name="operacao" id="divisao" value="/"> <button for="divisao">/</button>
+             
+        </p>  
+        <p>  
+            Resultado: <input  id="resultado" type="text">  
+        </p>  
+        <p>  
+            <input type="button" value="Calcular" onclick="calculadora()">  
+        </p>  
+        </form>  
+    </body>    
+</html> 
