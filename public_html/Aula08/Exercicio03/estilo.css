@@ -1,0 +1,113 @@
+@charset "ISO-8859-1";
+
+
+body {
+
+    background-image: linear-gradient(to right,beige,white);
+
+}
+
+.logo {
+
+    display: block;
+    padding: 12px;
+    position: 
+        relative;
+
+
+}
+
+p {
+    font-size: 15px;
+    font-style: inherit;
+    font-family: sans-serif;
+    margin: auto;
+    padding: 12px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+
+
+span {
+    padding: 12px;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+#qnt {
+
+    margin: auto;
+    margin-left: 30px;
+}
+
+#qnt2 {
+
+    margin: auto;
+    margin-left: 30px;
+}
+
+#qnt3 {
+
+    margin: auto;
+    margin-left: 20px;
+}
+
+#quantidade {
+
+    border: solid 1px gray;
+    border-radius: 15px 15px;
+    
+    font-family: Arial;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    height: 30px;
+    text-align: center;
+}
+
+#valor1 {
+
+    margin: auto;
+    margin-left: -20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#valor2 {
+
+    margin: auto;
+    margin-left: -20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#limpar {
+
+    margin-left: 50px;
+    border-radius: 15px 15px;
+}
+
+#adicionar {
+
+    border-radius: 15px 15px; 
+}
+
+
+#produto {
+    font-family: Arial;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    width: 170px;
+    height: 30px;
+}
+
+.blimpar{
+    background-color: brown;
+    color: whitesmoke;
+}
+.badicionar{
+    background-color: indigo;
+    color: whitesmoke;
+}

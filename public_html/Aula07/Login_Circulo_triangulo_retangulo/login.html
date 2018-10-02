@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Tela de Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-image: linear-gradient(to left, yellow,green)">
+
+
+        <script>
+            function LOG() {
+
+                var login = document.getElementById("login").value;
+                var senha = document.getElementById("senha").value;
+                //usuário e senha
+                if (login === "admin" && senha === "fael1993") {
+
+
+
+
+
+             // alert("Usuário Efetuado com Sucesso!");
+             // window.open('sucesso.html'); //Outra Janela;e
+             // Mesmo comportamento de um Redirecionamento HTTP.
+             
+                    window.location.replace("sucesso.html");
+                    
+            // Mesmo comportamento de um click em um link;e
+           // window.location.href = "cadastroDoador.html".
+                } else
+                {
+
+                    //  alert("Dados inválidos!");
+                     
+                   // window.open('falha.html');
+                   
+                   window.location.replace("falha.html");
+                }
+            }
+
+        </script>
+
+    <center><h1>PARA ENTRAR NO SISTEMA, DIGITE SEU LOGIN E SENHA NOS CAMPOS ABAIXO!</h1></center>
+    <br><br>
+    <form action="" method="post" >
+
+        <table border="" align="center">
+            <tr>
+                <td>Login:</td>
+                <td align="center">  <input type="text" id="login" size="30" placeholder="Insira seu Login" autofocus="" required ></td>
+            </tr>  
+
+            <tr>
+                <td>Senha:</td>
+                <td align="center"> <input type="password" id="senha" size="30" placeholder="Insira sua Senha" required ></td>
+            </tr>                  
+            <tr>
+                <td>  <input type="button" value="Entrar" name="btEntrar" onclick="LOG()"> </td> <td align="center"> </td>
+            </tr>
+
+
+        </table>
+
+    </form>
+</body>
+</html>

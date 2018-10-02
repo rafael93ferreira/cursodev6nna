@@ -1,43 +1,35 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>TODO supply a title</title>
-        <script src="libs/jquery-3.3.1.min.js" ></script>
-        <script src="libs/bootstrap/bootstrap.min.js" ></script>
-        <script src="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-        <script src="page.js"></script>
+
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
     </head>
     <body>
-        <div id="titulo">
-            Olá mundo!
-            <h1>Curso de JQuery!</h1>
-            <input type="button" id="salvar" value="Salvar"
-        </div>
-    </body> 
+        <script>
+
+            var peso;
+            var altura;
+            var imc;
+
+            imc = peso / altura ^ 2;
+
+            for (var i = 0; i < 4; i = i + 1) {
+                console.log("Resultado i=" + i);
+            }
+            if (imc < 18, 5) {
+                console.log("Abaixo do peso")
+
+            } else if (imc >= 18, 6 < 24, 9) {
+                console.log("Peso ideal");
+            } else {
+
+
+
+
+
+        </script>
+    </body>
 </html>
-<div class="container">
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>    
+    <head>    
+        <meta charset="UTF-8">    
+        <title>Calculadora</title>  
+        <link rel="stylesheet" href="estilo.css" type="text/css">
+<script>
+<!--Variaveis e as operações da calculadora-->
+        function calcular(oper){
+                    var valor1 = document.getElementById("valor1").value;
+            var valor2 = document.getElementById("valor2").value;
+
+            if (oper == "somar") {
+                    var resultado = parseInt(valor1) + parseInt(valor2);
+            }else{
+                            if (oper == "subtrair") {
+                            var resultado = valor1 - valor2;
+                    }else{
+                                    if (oper == "multiplicar") {
+                                                    var resultado = valor1 * valor2;
+
+                                    }else{
+                                                            var resultado = valor1 / valor2;
+                                                    }
+                                    }
+                                                            }
+                                                            document.getElementById("res").innerHTML ="Resultado: "+ resultado;
+                }
+        </script>   
+
+    </head>    
+    <body> 
+        <fieldset> 
+            <legend> Calculadora </legend>
+
+            # <input class="caixa" type="number" id="valor1"><br><br>
+            # <input class="caixa" type="number" id="valor2"><br><br>
+
+            <input class="botao" type="button" value="+" onclick="calcular('somar')" >
+            <input class="botao" type="button" value="-" onclick="calcular('subtrair')">
+            <input class="botao" type="button" value="*" onclick="calcular('multiplicar')">   
+            <input class="botao" type="button" value="/" onclick="calcular()">  
+
+
+            <p class="resultado" id="res">Resultado: </p>   
+
+        </fieldset>
+    </body>    
+</html> 

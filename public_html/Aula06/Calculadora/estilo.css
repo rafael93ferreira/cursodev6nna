@@ -1,0 +1,21 @@
+/* 
+    Created on : 22/09/2018 - 20:45:22
+    Author     : 26095045
+*/
+fieldset{
+    border: double;
+    border-size: 5px;
+
+}
+.resultado{
+    color: orange;
+}
+.caixa{
+    background-color: #ffffe0;
+}
+.botao{
+    background-color: blue;
+    height: 40px;
+    width: 30px;
+    color: white;
+}
